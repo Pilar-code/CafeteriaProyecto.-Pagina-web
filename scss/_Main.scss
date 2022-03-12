@@ -3,7 +3,10 @@ main{
     background-color: $ColorPrincipal;
     width: 100%;
     margin: 0%;
-    height: 1600px;
+    & div img{
+        border:solid ;
+        border-color: #dfd3c8;
+    }
 }
 .row{
     margin:0%;
@@ -13,11 +16,7 @@ main{
     align-content: center;
     margin-bottom: 0%;
 }
-main div img{
-    border:solid ;
-    border-color: #dfd3c8;
-}
-.Main__ofertas {
+.main__ofertas{
     display: grid;
     grid-template-columns: 45% 45%;
     grid-template-rows: 1fr
@@ -27,8 +26,9 @@ main div img{
                          "desayuno merienda"
                          "precio precio";
     column-gap: 10vw;
+    padding-top: 10%;
     width: 100%;
-    margin-right: 7%;
+    height: 1200px;
 }
 .Main__Historia{
     display: grid;

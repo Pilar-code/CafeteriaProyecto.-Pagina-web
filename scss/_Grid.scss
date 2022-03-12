@@ -6,6 +6,17 @@
     text-align: center;
 } 
 
+.tamañoDescuentoOferta{
+    font-weight: 300;
+    font-size: 30px;
+    color: rgb(20, 20, 20);
+    grid-area: precio;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+
 .ubicacionGridDesayuno{
     grid-area: desayuno;
     justify-content: center;
@@ -29,24 +40,13 @@
 .gridBodyIndex{
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 600px
-                        220px;
+    grid-template-rows: 80%
+                        20%;
     grid-template-areas: "a1 a1"
                          "a2 a3";
     column-gap: 30px;
-    height: 1000px;
-}
-/*ver si coincide con class ubicaciongridoferta*/
-.tamañoDescuentoOferta{
-    font-weight: 300;
-    font-size: 30px;
-    color: rgb(20, 20, 20);
-    grid-area: precio;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-}
 
+}
 .ubicacion__especial__mañana{
     flex-direction: column;
     justify-content: space-evenly;

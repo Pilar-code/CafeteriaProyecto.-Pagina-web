@@ -1,6 +1,6 @@
 @import "Variables.scss";
 @import "Header.scss";
-@import "Maain.scss";
+@import "Main.scss";
 @import "Grid.scss";
 @import "MediaQueries.scss";
 
@@ -29,9 +29,6 @@ h3{
     font-family: $FontFamily;
     padding-top: 5vw;
     background-color: $ColorPrincipal;
-    & h3{
-        margin: 0%;
-    }
 }
 
 p{
@@ -50,15 +47,6 @@ ul li{
     align-content: center;
 }
 
-/* HOVER */
-.estiloNav :hover{
-    color: #fce9d5;
-
-}
-.textoFooter :hover{
-    color:#fac790;
-}
-
 /* FOOTER */
 .textoFooter{
     display: flex;
@@ -70,11 +58,13 @@ ul li{
     padding-bottom: 20px;
     color: $colorfuente;
     text-decoration: none;
+    & :hover{
+        color: #fac790;
+    }
 }
 
 /* DIV */
 div {
-
     & h3{
     text-align: center;
     }
@@ -100,12 +90,12 @@ div {
     margin: 10px;
     margin-top: 6vw;
 }
-.grid__imagen{
+.imagen__historia{
     grid-area: imagen;
     width: 100%;
 }
 
-.estilo__texto{
+.estilo__texto__productos{
     list-style-type:none;
     font-size: 1vw;
     max-width: 40vw;
@@ -118,7 +108,6 @@ div {
     font-size: 40px;
 }
 .estructuraFormulario{
-
     font-family: $FontFamily;
     color: $colorfuente;
 }
