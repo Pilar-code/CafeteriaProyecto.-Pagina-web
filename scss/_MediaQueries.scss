@@ -1,0 +1,165 @@
+
+@media screen and (max-width: 1023px) {
+    .grid__imagenes__productos{
+        grid-template-columns: 45% 45%;
+        grid-template-rows: 200px
+                            400px
+                            400px
+                            400px
+                            200px
+                            400px
+                            400px;
+        grid-template-areas: "bebidas bebidas"
+                   "img1 img2"
+                   "img3 img4"
+                   "img5 img5"
+                   "alimentos alimentos"
+                   "comida1 comida2"
+                   "comida3 comida3";
+}
+.textoFooter{
+    flex-flow: column; 
+    justify-content: center;
+}
+.tamañoImagenTienda{
+    max-width: 100%;
+    max-height: 100%;
+    grid-area: a1;
+}
+.gridBodyIndex{ 
+    grid-template-columns:50% 50%;
+    grid-template-rows: 1fr
+                        1fr;
+    grid-template-areas:"a1 a1"
+                       "a2 a3";     
+}
+.grid__html__ofertas{
+    grid-template-columns: 100% ;
+    grid-template-rows: 1fr
+                        1fr
+                        1fr
+                        1fr;
+    grid-template-areas: "oferta"
+                         "desayuno"
+                         "merienda"
+                         "precio";
+}
+.ubicacionGridDesayuno{
+    justify-content: center;
+    align-items: center;
+}
+.ubicacionGridMerienda{
+    justify-content: center;
+    align-items: center;
+}
+h3{
+    padding-top: 0%;
+}
+.grid__imagen{
+    grid-area: imagen;
+    width: 100%;
+}
+.grid__parrafo{
+    grid-area: historia;
+}
+.ubicacion__especial__mañana{
+    text-align: -webkit-center;
+    text-align-last: center;
+}
+.ubicacion__especial__tarde{
+    text-align: -webkit-center;
+    text-align-last: center;
+}
+}
+
+@media screen and (max-width:600px) {
+    .grid__imagenes__productos{
+        grid-template-columns: 100%;
+        grid-template-rows:20vw
+                           40vw
+                           40vw
+                           40vw
+                           40vw
+                           40vw
+                           20vw
+                           40vw
+                           40vw
+                           40vw;
+        grid-template-areas: "bebidas "
+                             "img1"
+                             "img2" 
+                             "img3"
+                             "img4" 
+                             "img5"
+                             "alimentos"
+                             "comida1" 
+                             "comida2" 
+                             "comida3";
+    }
+    .textoFooter{
+        flex-flow: column wrap;
+        justify-content: space-around;
+    }
+    .tamañoImagenTienda{
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .gridBodyIndex{
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr
+                            1.3fr
+                            1.3fr;
+        grid-template-areas: "a1"
+                             "a2"
+                             "a3";
+        justify-items: center;
+    }
+    .grid__html__ofertas{
+        grid-template-columns: 100% ;
+        grid-template-rows: 1fr
+                            1fr
+                            1fr
+                            1fr;
+        grid-template-areas: "oferta"
+                             "desayuno"
+                             "merienda"
+                             "precio";
+    }
+    
+    .ubicacionGridDesayuno{
+        justify-content: center;
+        align-items: center;
+    }
+    .ubicacionGridMerienda{
+        justify-content: center;
+        align-items: center;
+    }
+    h3{
+        padding-top: 0%;
+    }
+    .grid__imagen{
+        grid-area: imagen;
+        width: 100%;
+    }
+    .grid__parrafo{
+        grid-area: historia;
+    }
+    .ubicacion__especial__mañana{
+        text-align: -webkit-center;
+        text-align-last: center;
+    }
+
+    .ubicacion__especial__tarde{
+        text-align: -webkit-center;
+        text-align-last: center;
+    }
+    .main__mobile{
+        overflow: hidden;
+        background-color: $colorprincipal;
+        width: 100%;
+        margin: 0%;
+        height: 2600px;
+    }
+    
+}
+

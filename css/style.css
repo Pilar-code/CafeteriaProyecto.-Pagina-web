@@ -1,0 +1,342 @@
+@charset "UTF-8";
+* {
+  margin: 0%; }
+
+header {
+  background-color: #d6d3d3;
+  position: sticky;
+  top: 0px;
+  border: 1px solid black; }
+
+header nav {
+  background-color: #d6d3d3;
+  display: inline-flex;
+  width: 100%;
+  flex-wrap: nowrap;
+  flex-direction: row-reverse;
+  position: sticky;
+  top: 0%; }
+
+main {
+  overflow: hidden;
+  background-color: #faeee1;
+  width: 100%;
+  margin: 0%;
+  height: 1600px; }
+
+h1 {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 400;
+  justify-content: center;
+  align-content: center;
+  color: black;
+  list-style-type: none;
+  text-decoration: none; }
+
+h2 {
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  color: #504e4e;
+  margin-top: 25px; }
+
+h3 {
+  font-family: 'Roboto Slab', serif;
+  padding-top: 5vw;
+  background-color: #faeee1; }
+
+.h3, h3 {
+  margin: 0%; }
+
+div h3 {
+  text-align: center; }
+
+p {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 500;
+  text-align: center;
+  color: #504e4e; }
+
+footer {
+  height: 100px;
+  background-color: #faeee1; }
+
+div li {
+  padding-bottom: 5vw;
+  text-align: left;
+  padding-top: 1vw;
+  font-size: x-large; }
+
+ul li {
+  display: contents;
+  text-decoration: none;
+  color: #504e4e;
+  height: auto;
+  justify-content: center;
+  align-content: center; }
+
+main div img {
+  border: solid;
+  border-color: #dfd3c8; }
+
+.estilo__texto {
+  list-style-type: none;
+  font-size: 1vw;
+  max-width: 40vw;
+  text-align: -webkit-center;
+  text-align-last: center; }
+
+.row {
+  margin: 0%;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  margin-bottom: 0%; }
+
+.textoFooter {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: center;
+  background-color: #faeee1;
+  padding-bottom: 20px;
+  color: #504e4e;
+  text-decoration: none; }
+
+.decoracionFooter {
+  text-align: center;
+  height: 300px;
+  text-decoration: none; }
+
+.nav {
+  width: 100%; }
+
+.estiloNav {
+  text-decoration: none;
+  list-style-type: none;
+  font-style: italic;
+  font-size: small;
+  text-align: end;
+  font-family: 'Roboto Slab', serif;
+  align-items: center; }
+
+.estiloNav :hover {
+  color: #fce9d5; }
+
+.textoFooter :hover {
+  color: #fac790; }
+
+.tamañoDescuentoOferta {
+  font-weight: 300;
+  font-size: 30px;
+  color: #141414;
+  grid-area: precio;
+  justify-content: center;
+  align-items: center;
+  height: 100px; }
+
+.tamañoPrecio {
+  text-align: center;
+  font-weight: 700;
+  font-size: 40px; }
+
+.ubicacionProductos {
+  list-style-type: none;
+  font-size: 1vw;
+  max-width: 40vw; }
+
+.imagenProductos {
+  max-width: 50%;
+  max-height: 70%;
+  display: flex;
+  margin: 10px;
+  margin-top: 6vw; }
+
+.ubicacionGridOfertas {
+  grid-area: oferta;
+  justify-items: center;
+  align-items: center;
+  text-align: center; }
+
+.ubicacionGridDesayuno {
+  grid-area: desayuno;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  border-top: 0%;
+  margin-top: 0%;
+  padding-top: 0px; }
+
+.ubicacionGridMerienda {
+  grid-area: merienda;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  border-top: 0%;
+  margin-top: 0%;
+  padding-top: 0px; }
+
+.grid__html__ofertas {
+  display: grid;
+  grid-template-columns: 45% 45%;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "oferta oferta" "desayuno merienda" "precio precio";
+  column-gap: 10vw;
+  width: 100%;
+  margin-right: 7%; }
+
+.gridBodyIndex {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 600px 220px;
+  grid-template-areas: "a1 a1" "a2 a3";
+  column-gap: 30px;
+  height: 1000px; }
+
+.tamañoImagenTienda {
+  max-width: 100%;
+  grid-area: a1;
+  object-fit: cover; }
+
+.ubicacion__especial__mañana {
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  max-width: 90%;
+  grid-area: a2;
+  text-align: -webkit-center;
+  text-align-last: center; }
+
+.ubicacion__especial__tarde {
+  grid-area: a3;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  max-width: 90%;
+  text-align: -webkit-center;
+  text-align-last: center; }
+
+.hubicacionGridHistoria {
+  grid-area: historia; }
+
+.hubicacionGridHistoria2 {
+  grid-area: historia2; }
+
+@media screen and (max-width: 1023px) {
+  .grid__imagenes__productos {
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 200px 400px 400px 400px 200px 400px 400px;
+    grid-template-areas: "bebidas bebidas" "img1 img2" "img3 img4" "img5 img5" "alimentos alimentos" "comida1 comida2" "comida3 comida3"; }
+  .textoFooter {
+    flex-flow: column;
+    justify-content: center; }
+  .tamañoImagenTienda {
+    max-width: 100%;
+    max-height: 100%;
+    grid-area: a1; }
+  .gridBodyIndex {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "a1 a1" "a2 a3"; }
+  .grid__html__ofertas {
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "oferta" "desayuno" "merienda" "precio"; }
+  .ubicacionGridDesayuno {
+    justify-content: center;
+    align-items: center; }
+  .ubicacionGridMerienda {
+    justify-content: center;
+    align-items: center; }
+  h3 {
+    padding-top: 0%; }
+  .gridHistoria {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "imagen" "historia" "historia2"; }
+  .grid__imagen {
+    grid-area: imagen;
+    width: 100%; }
+  .grid__parrafo {
+    grid-area: historia; }
+  .ubicacion__especial__mañana {
+    text-align: -webkit-center;
+    text-align-last: center; }
+  .ubicacion__especial__tarde {
+    text-align: -webkit-center;
+    text-align-last: center; } }
+
+.gridHistoria {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "imagen" "historia" "historia2";
+  height: 1000px; }
+
+.grid__imagen {
+  grid-area: imagen;
+  width: 100%; }
+
+.grid__parrafo {
+  grid-area: historia; }
+
+.grid__login {
+  margin-bottom: 10px;
+  grid-area: titulo; }
+
+.estructuraFormulario {
+  font-family: 'Roboto Slab', serif;
+  color: #504e4e; }
+
+@media screen and (max-width: 600px) {
+  .grid__imagenes__productos {
+    grid-template-columns: 100%;
+    grid-template-rows: 20vw 40vw 40vw 40vw 40vw 40vw 20vw 40vw 40vw 40vw;
+    grid-template-areas: "bebidas " "img1" "img2"  "img3" "img4"  "img5" "alimentos" "comida1"  "comida2"  "comida3"; }
+  .textoFooter {
+    flex-flow: column wrap;
+    justify-content: space-around; }
+  .tamañoImagenTienda {
+    max-width: 100%;
+    max-height: 100%; }
+  .gridBodyIndex {
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1.3fr 1.3fr;
+    grid-template-areas: "a1" "a2" "a3";
+    justify-items: center; }
+  .grid__html__ofertas {
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "oferta" "desayuno" "merienda" "precio"; }
+  .ubicacionGridDesayuno {
+    justify-content: center;
+    align-items: center; }
+  .ubicacionGridMerienda {
+    justify-content: center;
+    align-items: center; }
+  h3 {
+    padding-top: 0%; }
+  .gridHistoria {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50vw 35vw;
+    grid-template-areas: "imagen" "historia"; }
+  .grid__imagen {
+    grid-area: imagen;
+    width: 100%; }
+  .grid__parrafo {
+    grid-area: historia; }
+  .ubicacion__especial__mañana {
+    text-align: -webkit-center;
+    text-align-last: center; }
+  .ubicacion__especial__tarde {
+    text-align: -webkit-center;
+    text-align-last: center; }
+  .main__mobile {
+    overflow: hidden;
+    background-color: #faeee1;
+    width: 100%;
+    margin: 0%;
+    height: 2600px; } }

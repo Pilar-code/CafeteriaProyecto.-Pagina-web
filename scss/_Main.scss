@@ -1,0 +1,40 @@
+main{
+    overflow: hidden;
+    background-color: $ColorPrincipal;
+    width: 100%;
+    margin: 0%;
+    height: 1600px;
+}
+.row{
+    margin:0%;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    margin-bottom: 0%;
+}
+main div img{
+    border:solid ;
+    border-color: #dfd3c8;
+}
+.Main__ofertas {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 1fr
+                        1fr
+                        1fr;
+    grid-template-areas: "oferta oferta"
+                         "desayuno merienda"
+                         "precio precio";
+    column-gap: 10vw;
+    width: 100%;
+    margin-right: 7%;
+}
+.Main__Historia{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:"himagen"
+                        "historia"
+                        "historia2";
+}

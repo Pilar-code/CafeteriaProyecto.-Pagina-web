@@ -1,0 +1,124 @@
+@import "Variables.scss";
+@import "Header.scss";
+@import "Maain.scss";
+@import "Grid.scss";
+@import "MediaQueries.scss";
+
+*{
+    margin: 0%;
+}
+
+h1{
+    font-family: 'Dancing Script', cursive;
+    font-weight: 400;
+    justify-content: center;
+    align-content: center;
+    color: $colorfuente;
+    list-style-type: none;
+    text-decoration: none;  
+}
+
+h2{
+    text-align: center;
+    font-family: $FontFamily;
+    color: $colorfuente;
+    margin-top: 25px;
+}
+
+h3{
+    font-family: $FontFamily;
+    padding-top: 5vw;
+    background-color: $ColorPrincipal;
+    & h3{
+        margin: 0%;
+    }
+}
+
+p{
+    font-family: $FontFamily;
+    font-weight: 500;
+    text-align: center;
+    color: $colorfuente;
+}
+
+ul li{
+    display: contents;
+    text-decoration: none;
+    color: $colorfuente; 
+    height: auto;
+    justify-content: center;
+    align-content: center;
+}
+
+/* HOVER */
+.estiloNav :hover{
+    color: #fce9d5;
+
+}
+.textoFooter :hover{
+    color:#fac790;
+}
+
+/* FOOTER */
+.textoFooter{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: $colorprincipal;
+    padding-bottom: 20px;
+    color: $colorfuente;
+    text-decoration: none;
+}
+
+/* DIV */
+div {
+
+    & h3{
+    text-align: center;
+    }
+
+    & li{
+        padding-bottom: 5vw;
+        text-align:left;
+        padding-top: 1vw;
+        font-size:x-large;
+    }
+}
+
+/* IMAGENES */
+.tamañoImagenTienda{
+    max-width: 100%;
+    grid-area: a1;
+    object-fit: cover;
+}
+.imagenProductos{
+    max-width: 50%;
+    max-height: 70%;
+    display: flex;
+    margin: 10px;
+    margin-top: 6vw;
+}
+.grid__imagen{
+    grid-area: imagen;
+    width: 100%;
+}
+
+.estilo__texto{
+    list-style-type:none;
+    font-size: 1vw;
+    max-width: 40vw;
+    text-align: -webkit-center;
+    text-align-last: center;
+}
+.tamañoPrecio{
+    text-align: center;
+    font-weight: 700;
+    font-size: 40px;
+}
+.estructuraFormulario{
+
+    font-family: $FontFamily;
+    color: $colorfuente;
+}
