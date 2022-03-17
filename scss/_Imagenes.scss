@@ -1,0 +1,16 @@
+.tamañoImagenTienda{
+    max-width: 100%;
+    grid-area: a1;
+    object-fit: cover;
+}
+.imagenProductos{
+    max-width: 50%;
+    max-height: 70%;
+    display: flex;
+    margin: 10px;
+    margin-top: 6vw;
+}
+.imagen__historia{
+    grid-area: imagen;
+    width: 100%;
+}

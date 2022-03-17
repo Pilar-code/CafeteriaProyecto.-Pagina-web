@@ -102,7 +102,20 @@ main div img {
   background-color: #faeee1;
   padding-bottom: 20px;
   color: #504e4e;
-  text-decoration: none; }
+  text-decoration: none;
+  outline-style: none;}
+
+#Link{
+    color: #504e4e;
+    text-decoration: none;
+    outline-style: none;
+}
+#Link:hover{
+  color: coral;
+  text-decoration: none;
+  outline-style: none;
+}
+
 
 .decoracionFooter {
   text-align: center;

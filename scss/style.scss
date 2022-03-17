@@ -3,6 +3,7 @@
 @import "Main.scss";
 @import "Grid.scss";
 @import "MediaQueries.scss";
+@import "Imagenes.scss";
 
 *{
     margin: 0%;
@@ -47,6 +48,24 @@ ul li{
     align-content: center;
 }
 
+.estilo__texto__productos{
+    list-style-type:none;
+    font-size: 1vw;
+    max-width: 40vw;
+    text-align: -webkit-center;
+    text-align-last: center;
+}
+.tamañoPrecio{
+    text-align: center;
+    font-weight: 700;
+    font-size: 40px;
+}
+.estructuraFormulario{
+    font-family: $FontFamily;
+    color: $colorfuente;
+}
+
+
 /* FOOTER */
 .textoFooter{
     display: flex;
@@ -60,6 +79,17 @@ ul li{
     text-decoration: none;
     & :hover{
         color: #fac790;
+    }
+}
+
+#Link{
+    color: #504e4e;
+    text-decoration: none;
+    outline-style: none;
+    &:hover{
+        color: coral;
+        text-decoration: none;
+        outline-style: none;
     }
 }
 
@@ -77,37 +107,3 @@ div {
     }
 }
 
-/* IMAGENES */
-.tamañoImagenTienda{
-    max-width: 100%;
-    grid-area: a1;
-    object-fit: cover;
-}
-.imagenProductos{
-    max-width: 50%;
-    max-height: 70%;
-    display: flex;
-    margin: 10px;
-    margin-top: 6vw;
-}
-.imagen__historia{
-    grid-area: imagen;
-    width: 100%;
-}
-
-.estilo__texto__productos{
-    list-style-type:none;
-    font-size: 1vw;
-    max-width: 40vw;
-    text-align: -webkit-center;
-    text-align-last: center;
-}
-.tamañoPrecio{
-    text-align: center;
-    font-weight: 700;
-    font-size: 40px;
-}
-.estructuraFormulario{
-    font-family: $FontFamily;
-    color: $colorfuente;
-}
