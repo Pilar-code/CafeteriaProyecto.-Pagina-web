@@ -1,3 +1,17 @@
+@mixin Especiales ($area) {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 90%;
+    text-align: -webkit-center;
+    text-align-last: center;
+}
+.ubicacion__especial__mañana{
+   @include Especiales(a2);
+}
+.ubicacion__especial__tarde{
+    @include Especiales(a3)
+}
 
 .ubicacionGridOfertas{
     grid-area: oferta;
@@ -47,24 +61,7 @@
     column-gap: 30px;
 
 }
-.ubicacion__especial__mañana{
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    max-width: 90%;
-    grid-area: a2;
-    text-align: -webkit-center;
-    text-align-last: center;
-}
-.ubicacion__especial__tarde{
-    grid-area: a3;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    max-width: 90%;
-    text-align: -webkit-center;
-    text-align-last: center;
-}
+
 .hubicacionGridHistoria{
     grid-area: historia;
     & div{

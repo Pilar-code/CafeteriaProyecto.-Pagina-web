@@ -49,8 +49,7 @@
     align-items: center;
 }
 .ubicacionGridMerienda{
-    justify-content: center;
-    align-items: center;
+    @extend .ubicacionGridDesayuno
 }
 h3{
     padding-top: 0%;
@@ -67,8 +66,7 @@ h3{
     text-align-last: center;
 }
 .ubicacion__especial__tarde{
-    text-align: -webkit-center;
-    text-align-last: center;
+    @extend .ubicacion__especial__mañana
 }
 }
 
@@ -131,8 +129,7 @@ h3{
         align-items: center;
     }
     .ubicacionGridMerienda{
-        justify-content: center;
-        align-items: center;
+        @extend .ubicacionGridDesayuno
     }
     h3{
         padding-top: 0%;
@@ -150,8 +147,7 @@ h3{
     }
 
     .ubicacion__especial__tarde{
-        text-align: -webkit-center;
-        text-align-last: center;
+        @extend .ubicacion__especial__mañana
     }
     .main__productos__mobile{
         overflow: hidden;
