@@ -4,8 +4,8 @@
     object-fit: cover;
 }
 .imagenProductos{
-    max-width: 50%;
-    max-height: 70%;
+    max-width: 350px;
+    max-height: 550px;
     display: flex;
     margin: 10px;
     margin-top: 6vw;
@@ -14,4 +14,14 @@
     margin: 10px;
     display: flex;
     width: 100%;
+} 
+
+.Borde{
+  max-width: min-content;
+  border: 2px;
+  &:hover{
+  border: 2px;
+  border-color:#a9a39e;
+  border-style: dashed;
+}
 }
