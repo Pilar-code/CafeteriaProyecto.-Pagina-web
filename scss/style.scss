@@ -30,6 +30,9 @@ h3{
     font-family: $FontFamily;
     padding-top: 5vw;
     background-color: $ColorPrincipal;
+    text-align: center;
+    padding-bottom: 25px;
+    color: #c4a179;
 }
 
 p{
@@ -55,10 +58,11 @@ ul li{
     text-align: -webkit-center;
     text-align-last: center;
 }
-.tamañoPrecio{
+.EstiloPrecio{
     text-align: center;
     font-weight: 700;
     font-size: 40px;
+    color: #c68451;
 }
 .estructuraFormulario{
     font-family: $FontFamily;
@@ -87,7 +91,7 @@ ul li{
     text-decoration: none;
     outline-style: none;
     &:hover{
-        color: coral;
+        color: #c68451;
         text-decoration: none;
         outline-style: none;
     }
@@ -103,7 +107,8 @@ div {
         padding-bottom: 5vw;
         text-align:left;
         padding-top: 1vw;
-        font-size:x-large;
+        font-size:medium;
+        font-weight: 500;
     }
 }
 

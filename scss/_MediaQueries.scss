@@ -64,10 +64,28 @@ h3{
 .ubicacion__especial__mañana{
     text-align: -webkit-center;
     text-align-last: center;
+    padding-top: 30px;
 }
 .ubicacion__especial__tarde{
-    @extend .ubicacion__especial__mañana
+    @extend .ubicacion__especial__mañana;
 }
+}
+
+
+@media screen and (max-width:900px) {
+    .imagenProductos{
+        max-width: 190px;
+        max-height: 350px;
+        display: flex;
+        margin: 10px;
+        margin-top: 6vw;
+    }
+    .TituloHistoria{
+        padding-top: 40px;
+    }
+    .Main__Historia{
+        padding-bottom: 80px;
+    }
 }
 
 @media screen and (max-width:600px) {
@@ -112,6 +130,12 @@ h3{
                              "a3";
         justify-items: center;
     }
+    .TituloHistoria{
+        padding-top: 40px;
+    }
+    .Main__Historia{
+        padding-bottom: 80px;
+    }
     .main__ofertas{
         grid-template-columns: 100% ;
         grid-template-rows: 1fr
@@ -144,17 +168,31 @@ h3{
     .ubicacion__especial__mañana{
         text-align: -webkit-center;
         text-align-last: center;
+        padding-top: 25px;
     }
 
     .ubicacion__especial__tarde{
-        @extend .ubicacion__especial__mañana
+        @extend .ubicacion__especial__mañana;
+        padding-bottom: 30px;
     }
+    
+    .EstiloPrecio{
+        color: #c68451;
+    }
+
     .main__productos__mobile{
         overflow: hidden;
         background-color: $colorprincipal;
         width: 100%;
         margin: 0%;
         height: 2600px;
+    }
+    .imagenProductos{
+        max-width: 300px;
+        max-height: 500px;
+        display: flex;
+        margin: 10px;
+        margin-top: 6vw;
     }
     
 }

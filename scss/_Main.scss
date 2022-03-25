@@ -19,16 +19,16 @@ main{
 .main__ofertas{
     display: grid;
     grid-template-columns: 45% 45%;
-    grid-template-rows: 1fr
-                        1fr
-                        1fr;
+    grid-template-rows: 200px
+                        200px
+                        100px;
     grid-template-areas: "oferta oferta"
                          "desayuno merienda"
                          "precio precio";
     column-gap: 10vw;
-    padding-top: 10%;
+    padding-top: 40px;
     width: 100%;
-    height: 1200px;
+    height: 600px;
 }
 .Main__Historia{
     display: grid;
