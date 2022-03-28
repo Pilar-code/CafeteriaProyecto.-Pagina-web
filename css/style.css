@@ -482,12 +482,27 @@ main div img {
    }
 
     
-.Borde{
+.Margin{
   max-width: min-content;
   border: 2px;
+  border-color:#faeee1;
+  border-style: dashed;
 }
-.Borde:hover{
+
+.Margin:hover{
   border: 2px;
   border-color:#a9a39e;
   border-style: dashed;
+}
+
+button a{
+  color: #504e4e;
+  text-decoration: none;
+  outline-style: none;
+}
+
+button a:hover{
+  color: #504e4e;
+  text-decoration: none;
+  outline-style: none;
 }

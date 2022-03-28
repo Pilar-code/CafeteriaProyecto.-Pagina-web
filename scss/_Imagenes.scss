@@ -16,9 +16,11 @@
     width: 100%;
 } 
 
-.Borde{
+.Margin{
   max-width: min-content;
   border: 2px;
+    border-color:#faeee1;
+    border-style: dashed;
   &:hover{
   border: 2px;
   border-color:#a9a39e;
