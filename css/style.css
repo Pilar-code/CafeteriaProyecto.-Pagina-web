@@ -470,10 +470,10 @@ main div img {
       background-color: #faeee1;
       width: 100%;
       margin: 0%;
-      height: 2600px;
+      height: 3600px;
   }
     .imagenProductos{
-      max-width: 350px;
+      max-width: 300px;
       max-height: 550px;
       display: flex;
       margin: 10px;
